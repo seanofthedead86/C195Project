@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainScreen">
+   <children>
+      <VBox layoutY="136.0" prefHeight="360.0" prefWidth="800.0">
+         <children>
+            <TreeTableView prefHeight="443.0" prefWidth="800.0">
+              <columns>
+                <TreeTableColumn prefWidth="104.0" text="Appointment ID" />
+                <TreeTableColumn prefWidth="66.40008544921875" text="Title" />
+                  <TreeTableColumn prefWidth="118.4000244140625" text="Description" />
+                  <TreeTableColumn prefWidth="61.60003662109375" text="Location" />
+                  <TreeTableColumn prefWidth="98.39996337890625" text="Contact" />
+                  <TreeTableColumn prefWidth="92.00003051757812" text="Type" />
+                  <TreeTableColumn prefWidth="78.0" text="Start" />
+                  <TreeTableColumn prefWidth="78.0" text="End" />
+                  <TreeTableColumn prefWidth="98.4000244140625" text="Customer ID" />
+              </columns>
+            </TreeTableView>
+         </children>
+      </VBox>
+      <HBox layoutX="4.0" layoutY="33.0" prefHeight="100.0" prefWidth="791.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c51414;">
+               <children>
+                  <Label text="Scheduler" textFill="WHITE">
+                     <font>
+                        <Font name="Unispace-Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c51414;" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c51414;">
+               <children>
+                  <DatePicker prefHeight="6.0" prefWidth="174.0" promptText="PICK DATE" showWeekNumbers="true" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="194.0" spacing="4.0" style="-fx-background-color: #c51414;">
+               <children>
+                  <Label text="VIEW BY:" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" text="Month" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="Week" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="68.0" layoutY="496.0" prefHeight="47.0" prefWidth="664.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" text="Add Appointment" />
+            <Button mnemonicParsing="false" text="Modify Appointment" />
+            <Button mnemonicParsing="false" text="Delete Appointment" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="543.0" prefHeight="38.0" prefWidth="772.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" text="Manage Customers" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginScreen">
+   <children>
+      <GridPane alignment="CENTER_RIGHT" hgap="3.0" layoutX="80.0" layoutY="92.0" prefHeight="92.0" prefWidth="386.0" vgap="3.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.60003662109375" minWidth="10.0" prefWidth="112.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.99998779296874" minWidth="10.0" prefWidth="227.2" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="32.000006103515624" minHeight="10.0" prefHeight="32.000006103515624" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.4" minHeight="10.0" prefHeight="28.799993896484374" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="usernameInput" GridPane.columnIndex="1" />
+            <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="131.0" text="USERNAME:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="131.0" text="PASSWORD:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="131.0" text="LOCATION:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="locationHereText" text="Location Here" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordInput" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <VBox alignment="CENTER" layoutX="126.0" layoutY="14.0" prefHeight="46.0" prefWidth="247.0">
+         <children>
+            <Label prefHeight="70.0" prefWidth="150.0" text="WELCOME!">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="118.0" layoutY="184.0" prefHeight="86.0" prefWidth="263.0">
+         <children>
+            <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitButton" prefHeight="47.0" prefWidth="91.0" text="SUBMIT" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
